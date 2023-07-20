@@ -43,8 +43,10 @@ import tripguide from "./tripguide.png";
 // Projects
 import fyp from "./projects/fyp.png";
 import crypto from "./projects/crypto.png";
-import robos from "./projects/robos.png";
 import movies from "./projects/movies.png";
+import powerX from "./projects/power.png";
+import loopStudio from "./projects/loop.png";
+import sunnySide from "./projects/sunny.png";
 
 export {
   freelancer,
@@ -87,6 +89,8 @@ export {
   // projects
   fyp,
   crypto,
-  robos,
   movies,
+  powerX,
+  loopStudio,
+  sunnySide,
 };

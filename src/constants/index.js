@@ -1,7 +1,4 @@
 import {
-  carrent,
-  jobit,
-  tripguide,
   freelancer,
   figma,
   html,
@@ -36,8 +33,10 @@ import {
   // Projects
   fyp,
   crypto,
-  robos,
   movies,
+  powerX,
+  loopStudio,
+  sunnySide,
 } from "../assets";
 
 export const navLinks = [
@@ -210,28 +209,132 @@ const experiences = [
 ];
 
 const projects = [
+  // HTML, CSS, JS
   {
-    name: "Automated Product Sensing & Sentiments",
+    name: "Loop Studio",
     description:
-      "This project is created on FARM Stack. It's like a media monitoring site where user can search brands, competitors or hashtags to analyze market trends, brand health, customer's reviews and sentiments.",
+      "Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.",
     tags: [
       {
-        name: "React",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "FastAPI",
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JQuery",
         color: "green-text-gradient",
       },
       {
-        name: "MySQL",
-        color: "pink-text-gradient",
+        name: "JS",
+        color: "green-text-gradient",
       },
     ],
-    image: fyp,
-    source_code_link: "https://github.com/theahmadfareed/FARM",
-    website_link: "https://github.com/theahmadfareed/FARM",
+    image: loopStudio,
+    source_code_link: "https://github.com/theahmadfareed/Loop-Studio",
+    website_link: "https://loopstudio-123.netlify.app/",
   },
+  {
+    name: "Sunny Side",
+    description:
+      "We are full service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: sunnySide,
+    source_code_link: "https://github.com/theahmadfareed/Sunny-Side",
+    website_link: "https://sunnyside-123.netlify.app/",
+  },
+  // React
+  {
+    name: "Movie Land",
+    description: "Movies search website where user can search movies.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+    ],
+    image: movies,
+    source_code_link: "https://github.com/theahmadfareed/Movie-Land",
+    website_link: "https://movieland-123.netlify.app/",
+  },
+  {
+    name: "Power X",
+    description:
+      "A local fitness studio which provides several trainings, live chat support, email support and much more. ",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image: powerX,
+    source_code_link: "https://github.com/theahmadfareed/Gym-X",
+    website_link: "https://gymx-123.netlify.app/",
+  },
+  // MERN
   {
     name: "Crypto Tracker",
     description:
@@ -254,37 +357,28 @@ const projects = [
     source_code_link: "https://github.com/theahmadfareed/MERN",
     website_link: "https://github.com/theahmadfareed/MERN",
   },
+  // FARM
   {
-    name: "Robo Friends",
+    name: "Automated Product Sensing & Sentiments",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This project is created on FARM Stack. It's like a media monitoring site where user can search brands, competitors or hashtags to analyze market trends, brand health, customer's reviews and sentiments.",
     tags: [
       {
         name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "Redux",
+        name: "FastAPI",
         color: "green-text-gradient",
       },
-    ],
-    image: robos,
-    source_code_link: "https://github.com/theahmadfareed/robofriends-redux",
-    website_link: "https://github.com/theahmadfareed/robofriends-redux",
-  },
-  {
-    name: "Movie Land",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "MySQL",
+        color: "pink-text-gradient",
       },
     ],
-    image: movies,
-    source_code_link: "https://github.com/",
-    website_link: "https://github.com/",
+    image: fyp,
+    source_code_link: "https://github.com/theahmadfareed/FARM",
+    website_link: "https://github.com/theahmadfareed/FARM",
   },
 ];
 

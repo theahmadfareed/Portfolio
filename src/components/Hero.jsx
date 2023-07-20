@@ -2,6 +2,7 @@ import StarsCanvas from "./canvas/Stars";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { TypeAnimation } from "react-type-animation";
+import dp from "../assets/dp.png";
 
 const Hero = () => {
   return (
@@ -26,8 +27,8 @@ const Hero = () => {
             Hi, I'm <span className="text-[#E7463A]">Ahmad</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop full-stack web applications in,
-            <br className="sm:block hidden " />
+            I develop full-stack web applications in <span></span>
+            {/* <br className="sm:block hidden " /> */}
             <TypeAnimation
               className="text-[#E7463A]"
               cursor={false}
@@ -38,7 +39,30 @@ const Hero = () => {
             />{" "}
             stack.
           </p>
+          <p>Turning ideas into real life projects is my calling.</p>
         </div>
+        <span>
+          <motion.img
+            animate={{
+              borderRadius: [
+                "72% 78% 72% 68% / 51% 30% 70% 49% ",
+                "43% 57% 29% 71% / 63% 40% 60% 37% ",
+                "30% 70% 61% 39% / 63% 40% 60% 37% ",
+                "30% 70% 61% 39% / 39% 56% 44% 61% ",
+                "50% 50% 42% 58% / 36% 49% 51% 64% ",
+                "48% 52% 42% 58% / 68% 37% 63% 32% ",
+              ],
+            }}
+            transition={{
+              type: "spring",
+              duration: 10,
+              repeat: Infinity,
+              repeatType: "mirror",
+            }}
+            src={dp}
+            alt=""
+          />
+        </span>
       </div>
 
       <div className="absolute xs:bottom-1 w-full flex justify-center">

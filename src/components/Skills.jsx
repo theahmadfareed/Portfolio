@@ -19,7 +19,7 @@ const Skills = () => {
           <div className="mt-10">
             <p
               className={styles.sectionSubText}
-              style={{ textAlign: "center", color: "#E7463A" }}
+              style={{ marginBottom: "20px", color: "#E7463A" }}
             >
               Primary Skills
             </p>
@@ -39,7 +39,7 @@ const Skills = () => {
           <div className="">
             <p
               className={styles.sectionSubText}
-              style={{ textAlign: "center", color: "#E7463A" }}
+              style={{ marginBottom: "20px", color: "#E7463A" }}
             >
               Secondary Skills
             </p>
