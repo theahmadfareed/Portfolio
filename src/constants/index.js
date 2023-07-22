@@ -207,111 +207,7 @@ const experiences = [
 ];
 
 const projects = [
-  // HTML, CSS, JS
-  {
-    name: "Sunny Side",
-    description:
-      "Creative-Service-Agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "SCSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JQuery",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-    ],
-    image: sunnySide,
-    source_code_link: "https://github.com/theahmadfareed/Sunny-Side",
-    website_link: "https://sunnyside-123.netlify.app/",
-  },
-  {
-    name: "Loop Studio",
-    description:
-      "Loop Studio has been producing world-class virtual reality projects for some of the best companies around the globe.",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "SCSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JQuery",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-    ],
-    image: loopStudio,
-    source_code_link: "https://github.com/theahmadfareed/Loop-Studio",
-    website_link: "https://loopstudio-123.netlify.app/",
-  },
-
   // React
-  {
-    name: "Power X",
-    description:
-      "A Fitness Studio which provides several trainings, live chat support, email support and much more. ",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "MUI",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "React",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Firebase",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: powerX,
-    source_code_link: "https://github.com/theahmadfareed/Gym-X",
-    website_link: "https://gymx-123.netlify.app/",
-  },
   {
     name: "Movie Land",
     description:
@@ -384,7 +280,110 @@ const projects = [
     source_code_link: "https://github.com/theahmadfareed/Youtube-Clone",
     website_link: "https://youtube-clone-xyz.netlify.app",
   },
-
+  // HTML, CSS, JS
+  {
+    name: "Loop Studio",
+    description:
+      "Loop Studio has been producing world-class virtual reality projects for some of the best companies around the globe.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: loopStudio,
+    source_code_link: "https://github.com/theahmadfareed/Loop-Studio",
+    website_link: "https://loopstudio-123.netlify.app/",
+  },
+  {
+    name: "Sunny Side",
+    description:
+      "Creative-Service-Agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: sunnySide,
+    source_code_link: "https://github.com/theahmadfareed/Sunny-Side",
+    website_link: "https://sunnyside-123.netlify.app/",
+  },
+  // React
+  {
+    name: "Power X",
+    description:
+      "A Fitness Studio which provides several trainings, live chat support, email support and much more. ",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: powerX,
+    source_code_link: "https://github.com/theahmadfareed/Gym-X",
+    website_link: "https://gymx-123.netlify.app/",
+  },
   // MERN
   {
     name: "Crypto Tracker",
@@ -413,6 +412,14 @@ const projects = [
       },
       {
         name: "Express",
+        color: "else-text-gradient",
+      },
+      {
+        name: "News-API",
+        color: "else-text-gradient",
+      },
+      {
+        name: "Coingecko-API",
         color: "else-text-gradient",
       },
       {
@@ -456,6 +463,14 @@ const projects = [
       },
       {
         name: "FastAPI",
+        color: "else-text-gradient",
+      },
+      {
+        name: "News-API",
+        color: "else-text-gradient",
+      },
+      {
+        name: "Reddit-API",
         color: "else-text-gradient",
       },
       {
