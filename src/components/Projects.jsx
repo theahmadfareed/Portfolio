@@ -34,7 +34,7 @@ const ProjectCard = ({
             <img src={image} alt="" />
           </div>
           <div className="card-bio">
-            <div className="">
+            <div>
               <h3
                 className="text-[#E7463A] font-bold text-[24px]"
                 variants={textVariant(index * 0.1)}
@@ -47,7 +47,7 @@ const ProjectCard = ({
               >
                 {description}
               </p>
-              <div className="mt-5 flex justify-center gap-5">
+              <div className="mt-5">
                 {tags.map((tag) => (
                   <p
                     key={`${name}-${tag.name}`}

@@ -24,18 +24,28 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-[#ffff] text-[17px] max-w-3xl leading-[30px]"
           >
-            I'm a skilled software developer with experience in JavaScript, PHP,
+            I'm a skilled software developer with experience in JavaScript,
             Python and expertise in frameworks like React, Node.js, Express,
-            Tailwind, Material UI, Sass, Django, Flask, and FastAPI. I'm a quick
-            learner and collaborate closely with clients to create efficient,
-            scalable, and user-friendly solutions that solve real-world
-            problems. Let's work together to bring your ideas to life!
+            Tailwind, Material UI, Sass, and FastAPI. I'm a quick learner and
+            collaborate closely with clients to create efficient, scalable, and
+            user-friendly solutions that solve real-world problems. Let's work
+            together to bring your ideas to life!
           </motion.p>
-          <div className="mt-5">
+          <div className="mt-5 ">
             <a href="#contact">
               <button className="bg-[#E7463A] py-2 px-3 rounded-xl outline-none w-fit text-white hover:bg-white hover:text-[#E7463A] font-bold shadow-md shadow-primary">
                 HIRE ME
               </button>
+            </a>
+            <a
+              className="ml-5 "
+              rel="noreferrer"
+              target="_blank"
+              href="https://rxresu.me/ha5403905/portfolio"
+            >
+              <button className="bg-[#E7463A] py-2 px-3 rounded-xl outline-none w-fit text-white hover:bg-white hover:text-[#E7463A] font-bold shadow-md shadow-primary">
+                View Resume
+              </button>{" "}
             </a>
           </div>
         </div>

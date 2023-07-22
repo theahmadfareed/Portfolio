@@ -9,6 +9,7 @@ import css from "./tech/css.png";
 import bootstrap from "./tech/bootstrap.png";
 import tailwind from "./tech/tailwind.png";
 import materialui from "./tech/materialui.png";
+import sass from "./tech/sass.png";
 import javascript from "./tech/javascript.png";
 import node from "./tech/node.png";
 import react from "./tech/react.png";
@@ -34,12 +35,9 @@ import tensorflow from "./tech/tensorflow.png";
 import pytorch from "./tech/pytorch.png";
 import tableau from "./tech/tableau.png";
 import powerbi from "./tech/powerbi.png";
-
+//
 import freelancer from "./company/freelancer.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 // Projects
 import fyp from "./projects/fyp.png";
 import crypto from "./projects/crypto.png";
@@ -54,15 +52,13 @@ export {
   logo,
   menu,
   close,
-  carrent,
-  jobit,
-  tripguide,
   figma,
   html,
   css,
   bootstrap,
   tailwind,
   materialui,
+  sass,
   javascript,
   node,
   react,

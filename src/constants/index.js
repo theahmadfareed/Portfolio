@@ -6,6 +6,7 @@ import {
   bootstrap,
   tailwind,
   materialui,
+  sass,
   javascript,
   node,
   react,
@@ -89,8 +90,8 @@ const primary_skills = [
     icon: materialui,
   },
   {
-    name: "CSS ",
-    icon: css,
+    name: "SASS",
+    icon: sass,
   },
   {
     name: "JavaScript",
@@ -152,10 +153,6 @@ const secondary_skills = [
     icon: python,
   },
   {
-    name: "Django",
-    icon: django,
-  },
-  {
     name: "FastAPI",
     icon: fastapi,
   },
@@ -212,43 +209,9 @@ const experiences = [
 const projects = [
   // HTML, CSS, JS
   {
-    name: "Loop Studio",
-    description:
-      "Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "SCSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JQuery",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-    ],
-    image: loopStudio,
-    source_code_link: "https://github.com/theahmadfareed/Loop-Studio",
-    website_link: "https://loopstudio-123.netlify.app/",
-  },
-  {
     name: "Sunny Side",
     description:
-      "We are full service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
+      "Creative-Service-Agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
     tags: [
       {
         name: "HTML",
@@ -279,11 +242,10 @@ const projects = [
     source_code_link: "https://github.com/theahmadfareed/Sunny-Side",
     website_link: "https://sunnyside-123.netlify.app/",
   },
-  // React
   {
-    name: "Power X",
+    name: "Loop Studio",
     description:
-      "A local fitness studio which provides several trainings, live chat support, email support and much more. ",
+      "Loop Studio has been producing world-class virtual reality projects for some of the best companies around the globe.",
     tags: [
       {
         name: "HTML",
@@ -291,6 +253,46 @@ const projects = [
       },
       {
         name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: loopStudio,
+    source_code_link: "https://github.com/theahmadfareed/Loop-Studio",
+    website_link: "https://loopstudio-123.netlify.app/",
+  },
+
+  // React
+  {
+    name: "Power X",
+    description:
+      "A Fitness Studio which provides several trainings, live chat support, email support and much more. ",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MUI",
         color: "pink-text-gradient",
       },
       {
@@ -303,7 +305,7 @@ const projects = [
       },
       {
         name: "Firebase",
-        color: "green-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: powerX,
@@ -312,7 +314,8 @@ const projects = [
   },
   {
     name: "Movie Land",
-    description: "Movies search website where user can search movies.",
+    description:
+      "Search movies, tv-shows, watch trailers, see cast and much more.",
     tags: [
       {
         name: "HTML",
@@ -323,12 +326,24 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
+        name: "SASS",
+        color: "pink-text-gradient",
+      },
+      {
         name: "JS",
         color: "green-text-gradient",
       },
       {
         name: "React",
         color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TMDB",
+        color: "orange-text-gradient",
       },
     ],
     image: movies,
@@ -337,7 +352,8 @@ const projects = [
   },
   {
     name: "Youtube Clone",
-    description: "Youtube clone using React, MUI and Rapid-API.",
+    description:
+      "Youtube clone with minimal design and functionality using React, MUI and Rapid-API.",
     tags: [
       {
         name: "HTML",
@@ -361,7 +377,7 @@ const projects = [
       },
       {
         name: "Rapid-API",
-        color: "green-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: youtube,
@@ -373,19 +389,35 @@ const projects = [
   {
     name: "Crypto Tracker",
     description:
-      "The Crypto Tracker project, created using MERN Stack and News and Coingecko APIs, functions as a news site where users can view the latest news about cryptocurrencies and much more.",
+      "The Crypto Tracker project, created using MERN Stack, News and Coingecko APIs, functions as a news site where users can view the latest news about cryptocurrencies and much more.",
     tags: [
       {
-        name: "React",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "Express",
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
         color: "green-text-gradient",
       },
       {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "else-text-gradient",
+      },
+      {
         name: "MongoDB",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: crypto,
@@ -399,16 +431,36 @@ const projects = [
       "This project is created on FARM Stack. It's like a media monitoring site where user can search brands, competitors or hashtags to analyze market trends, brand health, customer's reviews and sentiments.",
     tags: [
       {
-        name: "React",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "FastAPI",
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
         color: "green-text-gradient",
       },
       {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "FastAPI",
+        color: "else-text-gradient",
+      },
+      {
         name: "MySQL",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: fyp,

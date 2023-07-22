@@ -9,6 +9,7 @@ import {
   Projects,
   StarsCanvas,
 } from "./components";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           </div>
         </div>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 };

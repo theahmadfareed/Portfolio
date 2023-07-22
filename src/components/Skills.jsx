@@ -1,9 +1,7 @@
-import React from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 
-import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { primary_skills, secondary_skills } from "../constants";
 
