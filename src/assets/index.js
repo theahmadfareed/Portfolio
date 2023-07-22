@@ -47,6 +47,7 @@ import movies from "./projects/movies.png";
 import powerX from "./projects/power.png";
 import loopStudio from "./projects/loop.png";
 import sunnySide from "./projects/sunny.png";
+import youtube from "./projects/youtube.png";
 
 export {
   freelancer,
@@ -93,4 +94,5 @@ export {
   powerX,
   loopStudio,
   sunnySide,
+  youtube,
 };

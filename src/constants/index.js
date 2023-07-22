@@ -37,6 +37,7 @@ import {
   powerX,
   loopStudio,
   sunnySide,
+  youtube,
 } from "../assets";
 
 export const navLinks = [
@@ -280,31 +281,6 @@ const projects = [
   },
   // React
   {
-    name: "Movie Land",
-    description: "Movies search website where user can search movies.",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "React",
-        color: "green-text-gradient",
-      },
-    ],
-    image: movies,
-    source_code_link: "https://github.com/theahmadfareed/Movie-Land",
-    website_link: "https://movieland-123.netlify.app/",
-  },
-  {
     name: "Power X",
     description:
       "A local fitness studio which provides several trainings, live chat support, email support and much more. ",
@@ -334,6 +310,65 @@ const projects = [
     source_code_link: "https://github.com/theahmadfareed/Gym-X",
     website_link: "https://gymx-123.netlify.app/",
   },
+  {
+    name: "Movie Land",
+    description: "Movies search website where user can search movies.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+    ],
+    image: movies,
+    source_code_link: "https://github.com/theahmadfareed/Movie-Land",
+    website_link: "https://movieland-123.netlify.app/",
+  },
+  {
+    name: "Youtube Clone",
+    description: "Youtube clone using React, MUI and Rapid-API.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Rapid-API",
+        color: "green-text-gradient",
+      },
+    ],
+    image: youtube,
+    source_code_link: "https://github.com/theahmadfareed/Youtube-Clone",
+    website_link: "https://youtube-clone-xyz.netlify.app",
+  },
+
   // MERN
   {
     name: "Crypto Tracker",

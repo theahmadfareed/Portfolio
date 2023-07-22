@@ -96,7 +96,7 @@ const Contact = () => {
                   value={form.user_name}
                   onChange={handleChange}
                   placeholder="What's your good name?"
-                  className="bg-white py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                  className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -107,7 +107,7 @@ const Contact = () => {
                   value={form.user_email}
                   onChange={handleChange}
                   placeholder="What's your web address?"
-                  className="bg-white py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                  className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -120,7 +120,7 @@ const Contact = () => {
                   value={form.user_subject}
                   onChange={handleChange}
                   placeholder="What's subject of discussion?"
-                  className="bg-white py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                  className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -133,7 +133,7 @@ const Contact = () => {
                   value={form.user_message}
                   onChange={handleChange}
                   placeholder="What you want to say?"
-                  className="bg-white py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                  className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
 
