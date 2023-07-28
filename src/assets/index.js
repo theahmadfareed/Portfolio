@@ -11,8 +11,10 @@ import tailwind from "./tech/tailwind.png";
 import materialui from "./tech/materialui.png";
 import sass from "./tech/sass.png";
 import javascript from "./tech/javascript.png";
+import typescript from "./tech/typescript.png";
 import node from "./tech/node.png";
 import react from "./tech/react.png";
+import next from "./tech/next.png";
 import redux from "./tech/redux.png";
 import express from "./tech/express.png";
 import jwt from "./tech/jwt.png";
@@ -46,6 +48,9 @@ import powerX from "./projects/power.png";
 import loopStudio from "./projects/loop.png";
 import sunnySide from "./projects/sunny.png";
 import youtube from "./projects/youtube.png";
+import genius from "./projects/genius.png";
+import ecomadmin from "./projects/ecommerce-admin.png";
+import ecomclient from "./projects/ecommerce-client.png";
 
 export {
   freelancer,
@@ -60,8 +65,10 @@ export {
   materialui,
   sass,
   javascript,
+  typescript,
   node,
   react,
+  next,
   redux,
   express,
   jwt,
@@ -91,4 +98,7 @@ export {
   loopStudio,
   sunnySide,
   youtube,
+  genius,
+  ecomadmin,
+  ecomclient,
 };

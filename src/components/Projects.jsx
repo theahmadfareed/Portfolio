@@ -73,11 +73,11 @@ const ProjectCard = ({
                     <BiLink className="icon" />
                   </span>
                 </a>
-                <a target={"_blank"} href={source_code_link}>
+                {/* <a target={"_blank"} href={source_code_link}>
                   <span>
                     <FaGithubAlt className="icon" />
                   </span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
