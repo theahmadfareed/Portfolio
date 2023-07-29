@@ -3,15 +3,11 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
 import StarsCanvas from "./canvas/Stars";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -59,17 +55,15 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
+    <div className="mt-20">
       <StarsCanvas />
 
-      <motion.div variants={textVariant()}>
-        <h2
-          className={`${styles.sectionHeadText} text-center`}
-          style={{ color: "#E7463A" }}
-        >
-          Work Experience.
-        </h2>
-      </motion.div>
+      <h2
+        className={`${styles.sectionHeadText} text-center`}
+        style={{ color: "#E7463A" }}
+      >
+        Work Experience.
+      </h2>
 
       <div className="mt-20 flex flex-col ">
         <VerticalTimeline>
@@ -81,7 +75,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

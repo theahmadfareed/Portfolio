@@ -7,7 +7,7 @@ import { primary_skills, secondary_skills } from "../constants";
 
 const Skills = () => {
   return (
-    <>
+    <div>
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText} style={{ color: "#E7463A" }}>
           About My Skills.
@@ -34,7 +34,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          <div className="">
+          <div>
             <p
               className={styles.sectionSubText}
               style={{ marginBottom: "20px", color: "#E7463A" }}
@@ -56,7 +56,7 @@ const Skills = () => {
           </div>
         </div>
       </motion.div>
-    </>
+    </div>
   );
 };
 

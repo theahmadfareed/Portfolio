@@ -1,15 +1,17 @@
 import StarsCanvas from "./canvas/Stars";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { slideIn } from "../utils/motion";
 import { TypeAnimation } from "react-type-animation";
 import dp from "../assets/dp.png";
+import ParallaxText from "./ParallaxText";
 
 const Hero = () => {
   return (
     <section id="hero" className={`relative w-full h-screen mx-auto`}>
       <StarsCanvas />
-
       <div
+        id="main"
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
@@ -21,27 +23,32 @@ const Hero = () => {
             }}
           />
         </div>
+        <motion.div
+          initial="hidden"
+          animate="show"
+          variants={slideIn("left", "tween", 0.2, 0.5)} // Adjust the direction, type, delay, and duration as needed
+        >
+          <div id="info">
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className="text-[#E7463A]">Ahmad</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              I develop full-stack web applications in <span></span>
+              <TypeAnimation
+                className="text-[#E7463A]"
+                cursor={false}
+                sequence={["MERN", 2000, "FARM", 2000]}
+                speed={50}
+                wrapper="span"
+                repeat={Infinity}
+              />{" "}
+              stack.
+            </p>
+            <p>Turning ideas into real life projects is my calling.</p>
+          </div>
+        </motion.div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#E7463A]">Ahmad</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop full-stack web applications in <span></span>
-            {/* <br className="sm:block hidden " /> */}
-            <TypeAnimation
-              className="text-[#E7463A]"
-              cursor={false}
-              sequence={["MERN", 2000, "FARM", 2000]}
-              speed={50}
-              wrapper="span"
-              repeat={Infinity}
-            />{" "}
-            stack.
-          </p>
-          <p>Turning ideas into real life projects is my calling.</p>
-        </div>
-        <span>
+        <span id="profile-img">
           <motion.img
             animate={{
               borderRadius: [
@@ -61,26 +68,26 @@ const Hero = () => {
             }}
             src={dp}
             alt=""
+            width={500}
+            height={500}
           />
         </span>
       </div>
 
-      <div className="absolute xs:bottom-1 w-full flex justify-center">
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
+      <div
+        className="absolute bottom-0 left-0 w-full"
+        style={{ color: "#E7463A" }}
+      >
+        <ParallaxText baseVelocity={-5}>
+          Full_Stack_Web_Developer-Frontend_Developer-Backend_Developer-
+        </ParallaxText>
+        <ParallaxText baseVelocity={5}>
+          Data_Engineering-Data_Analysis-Big_Data-Data_Warehouse-DBMS-Database-SQL-NoSQL-MySQL-
+          PostgreSQL-MongoDB-Neo4j-
+        </ParallaxText>
+        <ParallaxText baseVelocity={-5}>
+          Machine_Learning-Deep_Learning-Artificial_Intelligence-Data_Science-Computer_Vision-Digital_Image_Processing-
+        </ParallaxText>
       </div>
     </section>
   );

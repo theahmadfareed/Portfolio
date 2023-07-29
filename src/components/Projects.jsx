@@ -1,16 +1,14 @@
 import React from "react";
-
 import "./Projects.scss";
 import { BiLink } from "react-icons/bi";
 import { FaGithubAlt } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import { FacebookShareButton } from "react-share";
 import { motion } from "framer-motion";
-
+import { textVariant, slideIn, fadeIn } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
 import StarsCanvas from "./canvas/Stars";
 
 const ProjectCard = ({
@@ -91,26 +89,28 @@ const Projects = () => {
   return (
     <div>
       <StarsCanvas />
-
-      <motion.div variants={textVariant()}>
+      <motion.div
+        initial="hidden"
+        animate="show"
+        variants={slideIn("left", "tween", 0.2, 0.5)} // Adjust the direction, type, delay, and duration as needed
+      >
         <h2
           className={`${styles.sectionHeadText}`}
           style={{ color: "#E7463A" }}
         >
-          Portfolio.
+          Projects.
         </h2>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-3 text-[#ffff] text-[17px] max-w-3xl leading-[30px]"
+        >
+          Following projects showcase my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to code repositories and live demos. They reflect my ability to
+          solve complex problems, work with different technologies, and manage
+          projects effectively.
+        </motion.p>
       </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-3 text-[#ffff] text-[17px] max-w-3xl leading-[30px]"
-      >
-        Following projects showcase my skills and experience through real-world
-        examples of my work. Each project is briefly described with links to
-        code repositories and live demos. They reflect my ability to solve
-        complex problems, work with different technologies, and manage projects
-        effectively.
-      </motion.p>
 
       <div className="project-list mt-10 gap-10">
         {projects.map((project, index) => (

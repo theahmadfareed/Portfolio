@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { FaGithub, FaLinkedin, FaTwitter, FaReddit } from "react-icons/fa";
-
-import { EarthCanvas } from "./canvas";
+import { EarthCanvas, StarsCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const formRef = useRef();
@@ -48,8 +49,17 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+          toast.success(
+            "Thank you. I will get back to you as soon as possible.",
+            {
+              position: "top-right",
+              autoClose: 5000, // 5 seconds
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+            }
+          );
           setForm({
             user_name: "",
             user_email: "",
@@ -59,15 +69,22 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          toast.error("Ahh, something went wrong. Please try again.", {
+            position: "top-right",
+            autoClose: 5000, // 5 seconds
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
+          console.error(error);
         }
       );
   };
 
   return (
-    <>
+    <section className="mt-20">
       <div className="">
         <p className={styles.sectionSubText} style={{ color: "#ffff" }}>
           Got a project in mind?
@@ -88,6 +105,8 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="flex flex-col gap-5 "
             >
+              <StarsCanvas />
+
               <label className="flex flex-col">
                 <span className="text-white font-medium mb-4">Your Name</span>
                 <input
@@ -200,7 +219,10 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="absolute xs:bottom-1 w-full flex justify-center items-center right-0">
+      <div
+        id="ava"
+        className="absolute xs:bottom-1 w-full flex justify-center items-center right-0"
+      >
         <a href="#hero">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
@@ -217,7 +239,7 @@ const Contact = () => {
           </div>
         </a>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -1,5 +1,4 @@
 import { BrowserRouter } from "react-router-dom";
-
 import {
   About,
   Contact,
@@ -26,10 +25,10 @@ const App = () => {
           <div className="relative z-0">
             <Contact />
             <StarsCanvas />
+            <Footer />
           </div>
         </div>
       </BrowserRouter>
-      <Footer />
     </div>
   );
 };
