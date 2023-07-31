@@ -208,7 +208,7 @@ const experiences = [
     company_name: "Fiver",
     icon: freelancer,
     iconBg: "#383E56",
-    date: "January 2023 - Present",
+    date: "April 2023 - Present",
     points: [
       "As a freelance programmer, I have successfully tackled a range of programming tasks including OOP, DSA, Databases, Web Development and Data Analytics.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
