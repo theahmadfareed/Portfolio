@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { FaGithub, FaLinkedin, FaTwitter, FaReddit } from "react-icons/fa";
+import { SiFiverr } from "react-icons/si";
 import { EarthCanvas, StarsCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
@@ -205,6 +206,13 @@ const Contact = () => {
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin className={styles.socialIcon} />
+                </a>
+                <a
+                  href="https://www.fiverr.com/ahmadfareed151"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiFiverr className={styles.socialIcon} />
                 </a>
               </div>
             </div>

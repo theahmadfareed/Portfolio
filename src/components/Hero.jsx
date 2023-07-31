@@ -44,11 +44,11 @@ const Hero = () => {
               />{" "}
               stack.
             </p>
-            <p>Turning ideas into real life projects is my calling.</p>
+            <p>The best way to predict the future is to code it!</p>
           </div>
         </motion.div>
 
-        <span id="profile-img">
+        {/* <span id="profile-img">
           <motion.img
             animate={{
               borderRadius: [
@@ -71,7 +71,7 @@ const Hero = () => {
             width={500}
             height={500}
           />
-        </span>
+        </span> */}
       </div>
 
       <div

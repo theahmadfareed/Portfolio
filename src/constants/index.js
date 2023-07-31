@@ -205,7 +205,7 @@ const secondary_skills = [
 const experiences = [
   {
     title: "Developer",
-    company_name: "Fiver & Upwork",
+    company_name: "Fiver",
     icon: freelancer,
     iconBg: "#383E56",
     date: "January 2023 - Present",
