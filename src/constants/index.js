@@ -43,6 +43,7 @@ import {
   genius,
   ecomadmin,
   ecomclient,
+  characters,
 } from "../assets";
 
 export const navLinks = [
@@ -219,6 +220,44 @@ const experiences = [
 
 const projects = [
   // Next.js
+  {
+    name: "AI Characters",
+    description:
+      "AI tool which you can use for creating AI Characters for conversation.",
+    tags: [
+      {
+        name: "React.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "OpenAPI, Replicate",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Clerk, Prisma, MySQL, PlanetScale",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Pinecone, Upstash",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: characters,
+    source_code_link: "https://github.com/theahmadfareed/Character_Pro",
+    website_link: "https://character-pro.vercel.app/",
+  },
   {
     name: "Genius",
     description:

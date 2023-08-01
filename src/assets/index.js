@@ -51,6 +51,7 @@ import youtube from "./projects/youtube.png";
 import genius from "./projects/genius.png";
 import ecomadmin from "./projects/ecommerce-admin.png";
 import ecomclient from "./projects/ecommerce-client.png";
+import characters from "./projects/characters.png";
 
 export {
   freelancer,
@@ -101,4 +102,5 @@ export {
   genius,
   ecomadmin,
   ecomclient,
+  characters,
 };
