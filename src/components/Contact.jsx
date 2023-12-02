@@ -4,7 +4,8 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { FaGithub, FaLinkedin, FaTwitter, FaReddit } from "react-icons/fa";
 import { SiFiverr } from "react-icons/si";
-import { EarthCanvas, StarsCanvas } from "./canvas";
+// import { StarsCanvas } from "./canvas";
+import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { toast } from "react-toastify";
@@ -106,10 +107,10 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="flex flex-col gap-5 "
             >
-              <StarsCanvas />
+              {/* <StarsCanvas /> */}
 
               <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">Your Name</span>
+                <span className="text-[#E7463A] font-medium mb-4">Your Name</span>
                 <input
                   type="text"
                   name="user_name"
@@ -120,7 +121,7 @@ const Contact = () => {
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">Your email</span>
+                <span className="text-[#E7463A] font-medium mb-4">Your email</span>
                 <input
                   type="email"
                   name="user_email"
@@ -131,7 +132,7 @@ const Contact = () => {
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">
+                <span className="text-[#E7463A] font-medium mb-4">
                   Your Subject
                 </span>
                 <input
@@ -144,7 +145,7 @@ const Contact = () => {
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">
+                <span className="text-[#E7463A] font-medium mb-4">
                   Your Message
                 </span>
                 <textarea
@@ -159,7 +160,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="bg-[#E7463A] py-3 px-8 rounded-xl outline-none w-fit text-white hover:bg-white hover:text-[#E7463A] font-bold shadow-md shadow-primary"
+                className="bg-white py-3 px-8 rounded-xl outline-none w-fit text-[#E7463A] hover:bg-[#E7463A] hover:text-white font-bold shadow-md shadow-primary"
               >
                 {loading ? "Sending..." : "Send"}
               </button>
@@ -207,13 +208,13 @@ const Contact = () => {
                 >
                   <FaLinkedin className={styles.socialIcon} />
                 </a>
-                <a
+                {/* <a
                   href="https://www.fiverr.com/ahmadfareed151"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <SiFiverr className={styles.socialIcon} />
-                </a>
+                </a> */}
               </div>
             </div>
           </motion.div>

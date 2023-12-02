@@ -27,11 +27,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
+      className={`${styles.paddingX
+        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+        }`}
       style={{
         backgroundColor: scrolled ? "rgba(0, 0, 0, 0.5)" : "transparent",
       }}
@@ -46,21 +44,23 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+          {/* <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Ahmad Fareed
-          </p>
+          </p> */}
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-5">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-[#E7463A]"
-              } hover:text-white text-[18px] font-bold cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              className={`font-poppins font-medium cursor-pointer text-[18px] ${active === nav.title ? "text-[#E7463A]" : "text-white"
+                } hover:text-[#E7463A] cursor-pointer`}
+              onClick={() => {
+                setToggle(!toggle);
+                setActive(nav.title);
+              }}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}><b>{nav.title}</b></a>
             </li>
           ))}
         </ul>
@@ -74,23 +74,21 @@ const Navbar = () => {
           />
 
           <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-[#E7463A]"
-                  } hover:text-white cursor-pointer`}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-[#E7463A]" : "text-white"
+                    } hover:text-[#E7463A] cursor-pointer`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`}><b>{nav.title}</b></a>
                 </li>
               ))}
             </ul>

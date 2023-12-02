@@ -1,4 +1,4 @@
-import StarsCanvas from "./canvas/Stars";
+// import StarsCanvas from "./canvas/Stars";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
@@ -9,7 +9,7 @@ import ParallaxText from "./ParallaxText";
 const Hero = () => {
   return (
     <section id="hero" className={`relative w-full h-screen mx-auto`}>
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
       <div
         id="main"
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
@@ -33,18 +33,18 @@ const Hero = () => {
               Hi, I'm <span className="text-[#E7463A]">Ahmad</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop full-stack web applications in <span></span>
+              I develop Web Applications in <span></span>
               <TypeAnimation
                 className="text-[#E7463A]"
                 cursor={false}
-                sequence={["MERN", 2000, "FARM", 2000]}
+                sequence={["MERN", 2000, "FARM", 2000, "LAMP", 2000, "Django", 2000, "NEXT.js", 2000, "Laravel", 2000]}
                 speed={50}
                 wrapper="span"
                 repeat={Infinity}
               />{" "}
-              stack.
+              .
             </p>
-            <p>The best way to predict the future is to code it!</p>
+            <><p className="text-white text-xl">The best way to predict the future is to code it!</p></>
           </div>
         </motion.div>
 
@@ -79,14 +79,13 @@ const Hero = () => {
         style={{ color: "#E7463A" }}
       >
         <ParallaxText baseVelocity={-5}>
-          Full_Stack_Web_Developer-Frontend_Developer-Backend_Developer-
+          Frontend_Developer-Backend_Developer-Full_Stack_Developer-
         </ParallaxText>
         <ParallaxText baseVelocity={5}>
-          Data_Engineering-Data_Analysis-Big_Data-Data_Warehouse-DBMS-Database-SQL-NoSQL-MySQL-
-          PostgreSQL-MongoDB-Neo4j-
+          MySQL-PostgreSQL-MongoDB-Data_Engineering-Big_Data-Data_Warehouse-Data_Analysis-
         </ParallaxText>
         <ParallaxText baseVelocity={-5}>
-          Machine_Learning-Deep_Learning-Artificial_Intelligence-Data_Science-Computer_Vision-Digital_Image_Processing-
+          Digital_Image_Processing-Computer_Vision-Machine_Learning-Deep_Learning-Artificial_Intelligence-Data_Science-
         </ParallaxText>
       </div>
     </section>

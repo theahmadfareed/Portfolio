@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import StarsCanvas from "./canvas/Stars";
+// import StarsCanvas from "./canvas/Stars";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
@@ -14,7 +14,7 @@ const ExperienceCard = ({ experience }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: "transparent",
-        color: "#ffff",
+        color: "#E7463A",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #E7463A" }}
       date={experience.date}
@@ -30,7 +30,7 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-[#E7463A] text-[24px] font-bold">{experience.title}</h3>
         <p
           className="text-[#E7463A] text-[16px] font-semibold"
           style={{ margin: 0 }}
@@ -39,7 +39,7 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      <ul className="mt-5 list-disc ml-5 space-y-2">
+      <ul className="mt-5 ml-5 space-y-2 custom-dot-list">
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
@@ -56,7 +56,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <div className="mt-20">
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
 
       <h2
         className={`${styles.sectionHeadText} text-center`}

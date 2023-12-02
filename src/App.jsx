@@ -1,11 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
 import {
-  About,
-  Contact,
-  Experience,
-  Hero,
   Navbar,
+  Hero,
+  About,
   Projects,
+  Experience,
+  Contact,
   StarsCanvas,
 } from "./components";
 import Footer from "./components/Footer";
@@ -15,6 +15,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <div className="relative z-0 bg-primary">
+          <StarsCanvas />
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
             <Hero />
@@ -24,7 +25,6 @@ const App = () => {
           <Experience />
           <div className="relative z-0">
             <Contact />
-            <StarsCanvas />
             <Footer />
           </div>
         </div>

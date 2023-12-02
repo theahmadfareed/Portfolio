@@ -12,6 +12,7 @@ import materialui from "./tech/materialui.png";
 import sass from "./tech/sass.png";
 import javascript from "./tech/javascript.png";
 import typescript from "./tech/typescript.png";
+import ts from "./tech/ts.png";
 import node from "./tech/node.png";
 import react from "./tech/react.png";
 import next from "./tech/next.png";
@@ -28,6 +29,7 @@ import postgresql from "./tech/postgresql.png";
 import php from "./tech/php.png";
 import python from "./tech/python.png";
 import django from "./tech/django.png";
+import dj from "./tech/dj.png";
 import fastapi from "./tech/fastapi.png";
 import numpy from "./tech/numpy.png";
 import pandas from "./tech/pandas.png";
@@ -37,6 +39,8 @@ import tensorflow from "./tech/tensorflow.png";
 import pytorch from "./tech/pytorch.png";
 import tableau from "./tech/tableau.png";
 import powerbi from "./tech/powerbi.png";
+import laravel from "./tech/laravel.png";
+
 //
 import freelancer from "./company/freelancer.png";
 
@@ -54,6 +58,9 @@ import ecomclient from "./projects/ecommerce-client.png";
 import characters from "./projects/characters.png";
 
 export {
+  laravel,
+  dj,
+  django,
   freelancer,
   logo,
   menu,
@@ -67,6 +74,7 @@ export {
   sass,
   javascript,
   typescript,
+  ts,
   node,
   react,
   next,
@@ -81,7 +89,6 @@ export {
   postgresql,
   php,
   python,
-  django,
   fastapi,
   numpy,
   pandas,

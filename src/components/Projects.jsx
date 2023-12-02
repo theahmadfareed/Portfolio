@@ -1,122 +1,149 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.scss";
-import { BiLink } from "react-icons/bi";
-import { FaGithubAlt } from "react-icons/fa";
-import { GrFacebookOption } from "react-icons/gr";
-import { FacebookShareButton } from "react-share";
 import { motion } from "framer-motion";
 import { textVariant, slideIn, fadeIn } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import StarsCanvas from "./canvas/Stars";
-
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-  website_link,
-}) => {
-  return (
-    <div>
-      <motion.div
-        whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 80, opacity: 0 }}
-        transition={{ duration: 1, type: "spring" }}
-      >
-        <div className="card">
-          <div className="card-info">
-            <img src={image} alt="" />
-          </div>
-          <div className="card-bio">
-            <div>
-              <h3
-                className="text-[#E7463A] font-bold text-[24px]"
-                variants={textVariant(index * 0.1)}
-              >
-                {name}
-              </h3>
-              <p
-                className="mt-2 text-[#ffff] text-[14px]"
-                variants={textVariant(index * 0.1 + 0.2)}
-              >
-                {description}
-              </p>
-              <div className="mt-5">
-                {tags.map((tag) => (
-                  <p
-                    key={`${name}-${tag.name}`}
-                    className={`text-[14px] ${tag.color}`}
-                    variants={fadeIn("up", "spring", index * 0.1 + 0.4, 1)}
-                  >
-                    #{tag.name}
-                  </p>
-                ))}
-              </div>
-              <div className="flex justify-center">
-                <FacebookShareButton
-                  quote="PowerX App"
-                  hashtag={"#webdevelopment"}
-                  url={"https://www.facebook.com/"}
-                >
-                  <span>
-                    <GrFacebookOption className="icon" />
-                  </span>
-                </FacebookShareButton>
-                <a target={"_blank"} href={website_link}>
-                  <span>
-                    <BiLink className="icon" />
-                  </span>
-                </a>
-                {/* <a target={"_blank"} href={source_code_link}>
-                  <span>
-                    <FaGithubAlt className="icon" />
-                  </span>
-                </a> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  );
-};
+// import StarsCanvas from "./canvas/Stars";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-  return (
-    <div>
-      <StarsCanvas />
-      <motion.div
-        initial="hidden"
-        animate="show"
-        variants={slideIn("left", "tween", 0.2, 0.5)} // Adjust the direction, type, delay, and duration as needed
-      >
-        <h2
-          className={`${styles.sectionHeadText}`}
-          style={{ color: "#E7463A" }}
-        >
-          Projects.
-        </h2>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-[#ffff] text-[17px] max-w-3xl leading-[30px]"
-        >
-          Following projects showcase my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos. They reflect my ability to
-          solve complex problems, work with different technologies, and manage
-          projects effectively.
-        </motion.p>
-      </motion.div>
+  const categories = [...Object.keys(projects)];
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [searchInput, setSearchInput] = useState("");
 
-      <div className="project-list mt-10 gap-10">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+  const handleInputChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
+  const filterProjects = (projects, keyword) => {
+    return projects.filter((project) => {
+      const projectName = project.name.toLowerCase();
+
+      // Check if 'tags' is an array before using 'map'
+      const tags = Array.isArray(project.tags)
+        ? project.tags.map((tag) => tag.name.toLowerCase())
+        : [];
+
+      return (
+        projectName.includes(keyword.toLowerCase()) ||
+        tags.some((tag) => tag.includes(keyword.toLowerCase()))
+      );
+    });
+  };
+
+  const filteredProjects = filterProjects(
+    selectedCategory === "all"
+      ? categories.flatMap((category) => projects[category])
+      : projects[selectedCategory] || [],
+    searchInput
+  );
+
+  return (
+    <div >
+      {/* <StarsCanvas /> */}
+      <h2 className={`${styles.sectionHeadText}`} style={{ color: "#E7463A" }}>
+        Projects.
+      </h2>
+      <div style={{ textAlign: "center" }}>
+        <input
+          style={{
+            borderRadius: "5px",
+            backgroundColor: "white",
+            width: "270px",
+            height: "30px",
+            textAlign: "center",
+          }}
+          type="text"
+          name="user_search"
+          id="user_search"
+          placeholder="search by project or tag name..."
+          value={searchInput}
+          onChange={handleInputChange}
+        />
+        <br />
+        <label htmlFor="categorySelect" className="text-[#E7463A]">
+          <b>Select category:</b> &nbsp;
+        </label>
+        <select
+          id="categorySelect"
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          style={{
+            borderRadius: "10px",
+            backgroundColor: "#E7463A",
+            marginTop: "10px",
+            marginBottom: "10px",
+            width: "60px",
+          }}
+        >
+          <option value="all">All</option>
+          {categories.map((category) => (
+            <option key={category} value={category}>
+              {category.charAt(0).toUpperCase() + category.slice(1)}
+            </option>
+          ))}
+        </select>
       </div>
+      {selectedCategory === "all" ? (
+        categories.map((category, categoryIndex) => (
+          <motion.div
+            key={`category-${categoryIndex}`}
+            initial="hidden"
+            animate="show"
+            variants={slideIn("left", "tween", 0.2, 0.5)}
+          >
+            <h2
+              className={`${styles.heroSubText}`}
+              style={{ color: "#E7463A" }}
+            >
+              <b>{category}.</b>
+            </h2>
+            {projects[category]?.length > 0 ? (
+              <div className="project-list mt-10 mb-10 gap-10">
+                {projects[category].map((project, index) => (
+                  <ProjectCard
+                    key={`project-${index}`}
+                    index={index}
+                    {...project}
+                  />
+                ))}
+              </div>
+            ) : (
+              <p className="text-[#ffff] text-[17px] mb-10">
+                {category} Coming Soon.
+              </p>
+            )}
+          </motion.div>
+        ))
+      ) : (
+        <div>
+          <h2
+            className={`${styles.heroSubText}`}
+            style={{ color: "#E7463A", textAlign: "center" }}
+          >
+            <b>{selectedCategory === "all" ? "All" : selectedCategory}.</b>
+          </h2>
+          {filteredProjects.length > 0 ? (
+            <div className="project-list mt-10 mb-10 gap-10">
+              {filteredProjects.map((project, index) => (
+                <ProjectCard
+                  key={`project-${index}`}
+                  index={index}
+                  {...project}
+                />
+              ))}
+            </div>
+          ) : (
+            <p className="text-[#ffff] text-center text-[17px] mb-10">
+              {searchInput
+                ? `No projects found for "${searchInput}" in the ${selectedCategory} category.`
+                : `${selectedCategory} Coming Soon.`}
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 };

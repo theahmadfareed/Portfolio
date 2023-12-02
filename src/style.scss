@@ -1,7 +1,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+.custom-dot-list {
+  list-style-type: none; /* Remove default bullet points */
+}
 
+.custom-dot-list li::before {
+  content: "● ";
+  color: #E7463A; /* Change the color to your desired color */
+}
 $themes: (
   light: (
     bg: #fff,
