@@ -6,7 +6,7 @@ import {
   Projects,
   Experience,
   Contact,
-  StarsCanvas,
+  // StarsCanvas,
 } from "./components";
 import Footer from "./components/Footer";
 
@@ -15,7 +15,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <div className="relative z-0 bg-primary">
-          <StarsCanvas />
+          {/* <StarsCanvas /> */}
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
             <Hero />

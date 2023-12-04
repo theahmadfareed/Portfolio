@@ -49,6 +49,8 @@ import {
   characters,
   ts,
   django,
+  fyp_django,
+  fyp_mern,
 } from "../assets";
 
 export const navLinks = [
@@ -450,6 +452,44 @@ const projects = {
       source_code_link: "https://github.com/theahmadfareed/MERN",
       website_link: "",
     },
+    {
+      name: "Automated Product Sensing & Sentiments",
+      description:
+        "This project is created on MERN Stack. It's like a media monitoring site where user can search brands, competitors or hashtags to analyze market trends, brand health, customer's reviews and sentiments.",
+      tags: [
+        {
+          name: "React.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Reddit-API",
+          color: "else-text-gradient",
+        },
+        {
+          name: "News-API",
+          color: "else-text-gradient",
+        },
+        {
+          name: "Sentiment",
+          color: "else-text-gradient",
+        },
+        {
+          name: "Express",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: fyp_mern,
+      source_code_link: "https://github.com/theahmadfareed/FYP_MERN",
+      website_link: "https://github.com/theahmadfareed/FYP_MERN",
+    },
   ],
   "FARM Projects": [
     {
@@ -673,7 +713,46 @@ const projects = {
       website_link: "https://e-commerce-client-beryl.vercel.app/",
     },
   ],
-  "Django Projects": [],
+  "Django Projects": [
+    {
+      name: "Automated Product Sensing & Sentiments",
+      description:
+        "This project is created on FARM Stack. It's like a media monitoring site where user can search brands, competitors or hashtags to analyze market trends, brand health, customer's reviews and sentiments.",
+      tags: [
+        {
+          name: "React.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Reddit-API",
+          color: "else-text-gradient",
+        },
+        {
+          name: "News-API",
+          color: "else-text-gradient",
+        },
+        {
+          name: "Vader",
+          color: "else-text-gradient",
+        },
+        {
+          name: "Django",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: fyp_django,
+      source_code_link: "https://github.com/theahmadfareed/Backend",
+      website_link: "https://github.com/theahmadfareed/Backend",
+    },
+  ],
   "Laravel Projects": [],
 };
 

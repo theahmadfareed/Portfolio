@@ -46,6 +46,8 @@ import freelancer from "./company/freelancer.png";
 
 // Projects
 import fyp from "./projects/fyp.png";
+import fyp_django from "./projects/fyp_django.png";
+import fyp_mern from "./projects/fyp_mern.png";
 import php_cms from "./projects/php_cms.png";
 import crypto from "./projects/crypto.png";
 import movies from "./projects/movies.png";
@@ -112,4 +114,6 @@ export {
   ecomclient,
   characters,
   php_cms,
+  fyp_django,
+  fyp_mern,
 };
