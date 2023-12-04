@@ -36,6 +36,7 @@ import {
   powerbi,
   // Projects
   fyp,
+  php_cms,
   crypto,
   movies,
   powerX,
@@ -252,9 +253,52 @@ const projects = {
       website_link: "https://sunnyside-123.netlify.app/",
     },
   ],
-  "PHP Projects": [],
+  "PHP Projects": [
+    {
+      name: "Learn.io",
+      description: "Search blogs, like-blogs and much more.",
+      tags: [
+        {
+          name: "HTML",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Bootstrap",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "JQuery",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "AJAX",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "PHP",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: php_cms,
+      source_code_link:
+        "https://github.com/theahmadfareed/LearnPhp/tree/main/PHP_Course/09%20-%20Project/CMS",
+      website_link:
+        "https://github.com/theahmadfareed/LearnPhp/tree/main/PHP_Course/09%20-%20Project/CMS",
+    },
+  ],
   "Flask Projects": [],
-
   "React Projects": [
     {
       name: "Movie Land",
@@ -327,8 +371,46 @@ const projects = {
       website_link: "https://gymx-123.netlify.app/",
     },
   ],
-  "FastAPI Projects": [],
-
+  "FastAPI Projects": [
+    {
+      name: "Automated Product Sensing & Sentiments",
+      description:
+        "This project is created on FARM Stack. It's like a media monitoring site where user can search brands, competitors or hashtags to analyze market trends, brand health, customer's reviews and sentiments.",
+      tags: [
+        {
+          name: "React.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Reddit-API",
+          color: "else-text-gradient",
+        },
+        {
+          name: "News-API",
+          color: "else-text-gradient",
+        },
+        {
+          name: "Vader",
+          color: "else-text-gradient",
+        },
+        {
+          name: "FastAPI",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: fyp,
+      source_code_link: "https://github.com/theahmadfareed/FARM",
+      website_link: "",
+    },
+  ],
   "MERN Projects": [
     {
       name: "Crypto Tracker",
@@ -409,8 +491,51 @@ const projects = {
       website_link: "",
     },
   ],
-  "LAMP Projects": [],
-
+  "LAMP Projects": [
+    {
+      name: "Learn.io",
+      description: "Search blogs, like-blogs and much more.",
+      tags: [
+        {
+          name: "HTML",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Bootstrap",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "JQuery",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "AJAX",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "PHP",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: php_cms,
+      source_code_link:
+        "https://github.com/theahmadfareed/LearnPhp/tree/main/PHP_Course/09%20-%20Project/CMS",
+      website_link:
+        "https://github.com/theahmadfareed/LearnPhp/tree/main/PHP_Course/09%20-%20Project/CMS",
+    },
+  ],
   "NEXT Projects": [
     {
       name: "AI Characters",
