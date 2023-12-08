@@ -59,8 +59,10 @@ import genius from "./projects/genius.png";
 import ecomadmin from "./projects/ecommerce-admin.png";
 import ecomclient from "./projects/ecommerce-client.png";
 import characters from "./projects/characters.png";
+import flask_jovian from "./projects/flask_jovian.png";
 
 export {
+  flask_jovian,
   laravel,
   dj,
   django,

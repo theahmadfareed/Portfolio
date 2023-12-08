@@ -1,4 +1,5 @@
 import {
+  flask_jovian,
   dj,
   freelancer,
   laravel,
@@ -300,7 +301,38 @@ const projects = {
         "https://github.com/theahmadfareed/LearnPhp/tree/main/PHP_Course/09%20-%20Project/CMS",
     },
   ],
-  "Flask Projects": [],
+  "Flask Projects": [
+    {
+      name: "Jovian",
+      description:
+        "Your Gateway to Opportunities! Explore a diverse range of jobs tailored to your skills and interests. Seamlessly apply for your dream position with just a click. Need assistance or have questions? Connect with us through our Contact Form. Your journey to a fulfilling career starts here!",
+      tags: [
+        {
+          name: "HTML",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Bootstrap",
+          color: "else-text-gradient",
+        },
+        {
+          name: "Flask",
+          color: "else-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: flask_jovian,
+      source_code_link: "https://github.com/theahmadfareed/Jovian",
+      website_link: "https://github.com/theahmadfareed/Jovian",
+    },
+  ],
   "React Projects": [
     {
       name: "Movie Land",
