@@ -184,7 +184,6 @@ const experiences = [
     ],
   },
 ];
-const aazab = [];
 
 const projects = {
   "HTML, CSS, JS Projects": [
